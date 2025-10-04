@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oishi Ramen</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>🍴 Nhà hàng <span class="brand-accent">Oishi Ramen</span></h1>
+        <p class="slogan">Ẩm thực đậm đà - Không gian ấm áp</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#home" data-target="home" class="nav-link">Trang chủ</a>
+        <a href="#about" data-target="about" class="nav-link">Giới thiệu</a>
+        <a href="#menu" data-target="menu" class="nav-link">Thực đơn</a>
+        <a href="#reserve" data-target="reserve" class="nav-link">Đặt bàn</a>
+        <a href="#contact" data-target="contact" class="nav-link">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HOME -->
+    <section id="home" class="page-section">
+      <div class="hero">
+        <h2>Chào mừng đến với Oishi Ramen</h2>
+		<img src="ramenbanner.jpg" alt="không gian quán" width="800" height="400" />
+        <p>Hương vị truyền thống hòa cùng phong cách hiện đại — món ngon mỗi ngày.</p>
+        <div class="hero-cta">
+          <button class="btn" data-target="menu">Xem thực đơn</button>
+          <button class="btn btn-outline" data-target="reserve">Đặt bàn ngay</button>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <div class="card">
+          <h3>Nguyên liệu tươi</h3>
+          <p>Chúng tôi chọn nguyên liệu tươi, đảm bảo an toàn và ngon miệng.</p>
+		  <img src="fresh.jpg" alt="không gian quán" width="300" height="400" />
+        </div>
+        <div class="card">
+          <h3>Chef chuyên nghiệp</h3>
+          <p>Đầu bếp nhiều năm kinh nghiệm, sáng tạo món ăn độc đáo.</p>
+		  <img src="chef.jpg" alt="không gian quán" width="300" height="400" />
+        </div>
+        <div class="card">
+          <h3>Không gian ấm cúng</h3>
+		  
+          <p>Phù hợp gia đình, tụ họp bạn bè hoặc sự kiện nhỏ.</p>
+		  <img src="space.jpg" alt="không gian quán" width="300" height="400" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section" aria-hidden="true">
+      <h2>Về chúng tôi</h2>
+      <div class="about-grid">
+        <div>
+          <p><strong>Nhà hàng Oishi Ramen</strong> Ra đời vào năm 2025, chúng tôi mang đến trải nghiệm ẩm thực Ramen fusion độc đáo, kết hợp tinh hoa Nhật Bản với hương vị Việt. Ngoài các tô Ramen đậm đà, bạn còn có thể thưởng thức những món ăn vặt phong phú, tươi ngon, làm đầy trải nghiệm ẩm thực tại mỗi bàn ăn.</p>
+          <ul>
+            <li>Địa chỉ: 123 Đường Ẩm Thực, Quận 1, TP.HCM</li>
+            <li>Giờ mở cửa: 8:00 - 22:00 (T2 - CN)</li>
+            <li>Chef chính: <em>Chef xxx</em> — Chuyên gia Ramen & Fusion Nhật-Việt</li>
+          </ul>
+        </div>
+        <div class="about-photo">
+          <img src="ramenrestaurant.jpg" alt="không gian quán" width="600" height="400" />
+        </div>
+      </div>
+      <h3>Chúng tôi tin vào</h3>
+      <p>Chất lượng nguyên liệu + kinh nghiệm chế biến + phục vụ tận tâm = trải nghiệm ngon nhớ mãi.</p>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="page-section" aria-hidden="true">
+      <h2>Thực đơn</h2>
+
+      <!-- category tabs -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-cat="all">Tất cả</button>
+        <button class="tab-btn" data-cat="main">Món chính</button>
+        <button class="tab-btn" data-cat="dessert">Tráng miệng</button>
+        <button class="tab-btn" data-cat="drink">Đồ uống</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Món chính -->
+        <article class="food-item cat-main">
+		<img src="tonkotsuramen.jpg" alt="Tonkotsu Ramen" width="400" height="300" />
+          <h4>Tonkotsu Ramen</h4>
+          <p class="desc">Nước dùng hầm xương thơm, mì mềm, thịt heo thái lát, trứng lòng đào.</p>
+          <p class="price">120.000₫</p>
+        </article>
+
+        <article class="food-item cat-main">
+          <img src="shoyuramen.jpg" alt="Shoyu Ramen" width="400" height="300" />
+          <h4>Shoyu Ramen</h4>
+          <p class="desc">Nước tương Nhật thanh nhẹ, mì dai, thịt gà, hành lá, nấm.</p>
+          <p class="price">110.000₫</p>
+        </article>
+
+        <article class="food-item cat-main">
+          <img src="misoramen.jpg" alt="Miso Ramen" width="400" height="300" />
+          <h4>Miso Ramen</h4>
+          <p class="desc">Nước dùng miso đậm đà, mì vàng, bắp cải, ngô, thịt heo nướng thơm.</p>
+          <p class="price">130.000₫</p>
+        </article>
+
+        <!-- Tráng miệng -->
+        <article class="food-item cat-dessert">
+          <img src="mochi.jpg" alt="Mochi kem" width="400" height="300" />
+          <h4>Mochi kem</h4>
+          <p class="desc">Bánh nếp dẻo, nhân kem lạnh, ngọt dịu, mềm mịn.</p>
+          <p class="price">60.000₫</p>
+        </article>
+
+        <article class="food-item cat-dessert">
+          <<img src="matcha.jpg" alt="Matcha Pudding" width="400" height="300" />
+          <h4>Matcha Pudding</h4>
+          <p class="desc">Pudding trà xanh đậm vị, mềm mượt, thơm nhẹ.</p>
+          <p class="price">70.000₫</p>
+        </article>
+
+        <!-- Đồ uống -->
+        <article class="food-item cat-drink">
+          <img src="matchalatte.jpg" alt="Matcha Latte" width="400" height="300" />
+          <h4>Matcha Latte</h4>
+          <p class="desc">Matcha nguyên chất, sữa tươi béo nhẹ.</p>
+          <p class="price">60.000₫</p>
+        </article>
+
+        <article class="food-item cat-drink">
+          <img src="trahoaanhdao.jpg" alt="Trà hoa anh đào" width="400" height="300" />
+          <h4>Trà hoa anh đào</h4>
+          <p class="desc">Thơm mát, ngọt nhẹ.</p>
+          <p class="price">50.000₫</p>
+        </article>
+      </div>
+      <p class="menu-note">Ghi chú: Giá tham khảo, có thể thay đổi theo mùa.</p>
+    </section>
+
+   
+
+    <!-- RESERVATION -->
+    <section id="reserve" class="page-section" aria-hidden="true">
+      <h2>Đặt bàn</h2>
+      <form id="reserveForm" class="reserve-form">
+        <div class="form-row">
+          <label for="rname">Họ & tên</label>
+          <input id="rname" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="rphone">Số điện thoại</label>
+          <input id="rphone" name="phone" type="tel" required />
+        </div>
+        <div class="form-row-inline">
+          <div>
+            <label for="rdate">Ngày</label>
+            <input id="rdate" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="rtime">Giờ</label>
+            <input id="rtime" name="time" type="time" required />
+          </div>
+          <div>
+            <label for="rpeople">Số người</label>
+            <input id="rpeople" name="people" type="number" min="1" value="2" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="rnote">Ghi chú (tuỳ chọn)</label>
+          <textarea id="rnote" name="note" rows="3"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Gửi yêu cầu</button>
+          <button type="button" class="btn btn-outline" id="reserveReset">Xóa</button>
+        </div>
+        
+      </form>
+      <div id="reserveSuccess" class="success-note" style="display:none;">
+        <h4>Đặt bàn thành công!</h4>
+        <p>Chúng tôi đã ghi nhận yêu cầu. Chúng tôi sẽ gọi lại để xác nhận.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page-section" aria-hidden="true">
+      <h2>Liên hệ</h2>
+      <div class="contact-grid">
+        <div>
+          <p>📍 <strong>Địa chỉ:</strong> 123 Đường Ẩm Thực, Quận 1, TP.HCM</p>
+          <p>📞 <strong>Phone:</strong> <a href="tel:+84123456789">+84 123 456 789</a></p>
+          <p>✉️ <strong>Email:</strong> <a href="mailto:oishiramen@gmail.com">oishiramen@gmail.com</a></p>
+          <p>⏰ <strong>Giờ mở cửa:</strong> 8:00 - 22:00 (T2 - CN)</p>
+          <p>
+            Mạng xã hội:
+            <a href="#" aria-label="facebook">Facebook</a> ·
+            <a href="#" aria-label="instagram">Instagram</a>
+          </p>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Ho+Chi+Minh+City&output=embed"
+            height="220"
+            style="border:0;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Nhà hàng Oishi Ramen — Thiết kế demo bởi THÙY TRANG</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    // Hiển thị/ẩn section như "trang"
+    const sections = document.querySelectorAll('.page-section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const tabButtons = document.querySelectorAll('.tab-btn');
+
+    function showSection(id) {
+      sections.forEach(s => {
+        const show = s.id === id;
+        s.style.display = show ? 'block' : 'none';
+        s.setAttribute('aria-hidden', !show);
+      });
+      navLinks.forEach(a => a.classList.toggle('active', a.dataset.target === id));
+      // update hash without jumping
+      history.replaceState(null, '', '#' + id);
+      // scroll top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Listen nav clicks
+    navLinks.forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = a.dataset.target;
+        showSection(target);
+      });
+    });
+
+    // Hero / CTA buttons
+    document.querySelectorAll('[data-target]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const target = btn.dataset.target;
+        if (target) showSection(target);
+      });
+    });
+
+    // Menu tab logic
+    tabButtons.forEach(tb => {
+      tb.addEventListener('click', () => {
+        tabButtons.forEach(x => x.classList.remove('active'));
+        tb.classList.add('active');
+        const cat = tb.dataset.cat;
+        const items = document.querySelectorAll('.menu-grid .food-item');
+        items.forEach(it => {
+          if (cat === 'all') it.style.display = 'block';
+          else it.style.display = it.classList.contains('cat-' + cat) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Reservation form (store to localStorage as demo)
+    const reserveForm = document.getElementById('reserveForm');
+    const reserveSuccess = document.getElementById('reserveSuccess');
+    const reserveReset = document.getElementById('reserveReset');
+
+    reserveForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const data = {
+        name: reserveForm.rname.value,
+        phone: reserveForm.rphone.value,
+        date: reserveForm.rdate.value,
+        time: reserveForm.rtime.value,
+        people: reserveForm.rpeople.value,
+        note: reserveForm.rnote.value,
+        createdAt: new Date().toISOString()
+      };
+      // lưu tạm trong localStorage (chỉ ví dụ)
+      const arr = JSON.parse(localStorage.getItem('reservations') || '[]');
+      arr.push(data);
+      localStorage.setItem('reservations', JSON.stringify(arr));
+      reserveForm.style.display = 'none';
+      reserveSuccess.style.display = 'block';
+    });
+
+    reserveReset.addEventListener('click', () => {
+      reserveForm.reset();
+    });
+
+    // Khởi tạo: hiển thị section theo hash hoặc home
+    document.addEventListener('DOMContentLoaded', () => {
+      const hash = location.hash.replace('#', '');
+      const valid = [...sections].some(s => s.id === hash);
+      showSection(valid ? hash : 'home');
+      // khởi tạo menu tab (tất cả)
+      document.querySelector('.tab-btn[data-cat="all"]').click();
+    });
+  </script>
+</body>
+</html>
